@@ -1,0 +1,16 @@
+--- simage/CMakeLists.txt.orig	2020-11-30 19:58:08.803833373 +0100
++++ simage/CMakeLists.txt	2020-11-30 20:04:50.568323495 +0100
+@@ -543,9 +543,12 @@
+   set(DOXYGEN_WARN_IF_UNDOCUMENTED YES)
+   set(DOXYGEN_EXCLUDE)
+ 
++  set(simage_src_dir "${CMAKE_CURRENT_SOURCE_DIR}")
++  set(SIMAGE_DOC_HTML YES)
++  set(HTML_OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/html")
+   set(DOXYFILE "${CMAKE_CURRENT_BINARY_DIR}/Doxyfile")
+   set(DOXYGEN_OUTPUT "${CMAKE_BINARY_DIR}/html/index.html")
+-  configure_file("${CMAKE_CURRENT_SOURCE_DIR}/docs/simage.doxygen.cmake.in" ${DOXYFILE} @ONLY)
++  configure_file("${CMAKE_CURRENT_SOURCE_DIR}/docs/simage.doxygen.in" ${DOXYFILE} @ONLY)
+ 
+ # ############################################################################
+ # Setup documentation targets
