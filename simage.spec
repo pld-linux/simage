@@ -69,7 +69,7 @@ Pliki nagłówkowe biblioteki simage.
 Summary:	API documentation for simage library
 Summary(pl.UTF-8):	Dokumentacja API biblioteki simage
 Group:		Documentation
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description apidocs
 API documentation for simage library.
