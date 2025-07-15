@@ -99,7 +99,7 @@ Dokumentacja API biblioteki simage.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 install -d builddir
