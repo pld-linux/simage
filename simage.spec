@@ -9,7 +9,7 @@ Summary:	Library with image format loaders and front-ends to common import libra
 Summary(pl.UTF-8):	Biblioteka z wczytywaniem formatów obrazów oraz frontendami do popularnych bibliotek importujących
 Name:		simage
 Version:	1.8.3
-Release:	1
+Release:	2
 License:	MIT, MPEG
 Group:		Libraries
 #Source0Download: https://github.com/coin3d/simage/releases
