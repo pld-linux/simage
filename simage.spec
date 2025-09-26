@@ -8,13 +8,13 @@
 Summary:	Library with image format loaders and front-ends to common import libraries
 Summary(pl.UTF-8):	Biblioteka z wczytywaniem formatów obrazów oraz frontendami do popularnych bibliotek importujących
 Name:		simage
-Version:	1.8.3
-Release:	3
+Version:	1.8.4
+Release:	1
 License:	MIT, MPEG
 Group:		Libraries
 #Source0Download: https://github.com/coin3d/simage/releases
 Source0:	https://github.com/coin3d/simage/releases/download/v%{version}/%{name}-%{version}-src.tar.gz
-# Source0-md5:	af4faec8a7881937cc6b4440e45405bf
+# Source0-md5:	9d0ab2fa5ac99e6fa466a95257de859a
 Patch0:		%{name}-doxygen.patch
 URL:		https://github.com/coin3d/simage
 %if %{with qt}
@@ -132,12 +132,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog LICENSE LICENSE.mpeg2enc NEWS README
 %attr(755,root,root) %{_libdir}/libsimage.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libsimage.so.20
+%ghost %{_libdir}/libsimage.so.20
 
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/simage-config
-%attr(755,root,root) %{_libdir}/libsimage.so
+%{_libdir}/libsimage.so
 %{_includedir}/simage.h
 %{_pkgconfigdir}/simage.pc
 %{_libdir}/cmake/simage-%{version}
